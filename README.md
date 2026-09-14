@@ -1,6 +1,6 @@
 # Hervé Delvaux
 
-**Fondateur de [Webadev](https://www.webadev.com) et de [Wadeasy](https://www.wad-easy.be) — Liège, Belgique**
+**Fondateur de [Webadev](https://www.webadev.com) et de [WadEasy](https://www.wad-easy.be) — Liège, Belgique**
 
 Analyste-programmeur. Depuis plus de 25 ans, je conçois et j'exploite des applications
 métier web, du modèle de données jusqu'aux serveurs qui les font tourner.
