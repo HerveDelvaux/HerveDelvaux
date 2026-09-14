@@ -1,0 +1,75 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg:linear-gradient(135deg,#0a2a58 0%,#051A3A 48%,#020d20 100%);
+    --glow-a:rgba(51,216,171,.18);
+    --glow-b:rgba(51,216,171,.10);
+    --accent:#33d8ab;
+    --accent-2:#0b6e78;
+    --mono:#74ebc8;
+    --title:#ffffff;
+    --role:#93a8c4;
+    --role-strong:#e8f1fb;
+    --foot:#6b83a3;
+    --grid:rgba(255,255,255,0);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1280px; height:640px; }
+  body {
+    background:var(--bg);
+    font-family:"Cantarell","Liberation Sans",sans-serif;
+    color:var(--role-strong);
+    position:relative;
+    overflow:hidden;
+  }
+  .glow {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(760px 520px at 92% -12%, var(--glow-a), transparent 62%),
+      radial-gradient(620px 460px at 8% 112%, var(--glow-b), transparent 66%);
+  }
+  .grid {
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(900px 620px at 30% 40%, #000 30%, transparent 78%);
+  }
+  .bar { position:absolute; left:0; top:0; bottom:0; width:10px;
+         background:linear-gradient(180deg,var(--accent),var(--accent-2)); }
+  .wrap { position:relative; padding:96px 96px 88px 106px; height:100%;
+          display:flex; flex-direction:column; justify-content:center; }
+  .eyebrow { font-size:22px; letter-spacing:.34em; text-transform:uppercase;
+             color:var(--accent); font-weight:700; }
+  h1 { font-size:108px; line-height:1.02; font-weight:800; letter-spacing:-.025em;
+       color:var(--title); margin-top:26px; }
+  .role { font-size:38px; line-height:1.35; color:var(--role); margin-top:26px; font-weight:400; }
+  .role b { color:var(--role-strong); font-weight:600; }
+  .rule { width:120px; height:5px; border-radius:3px; margin-top:44px;
+          background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
+  .stack { font-family:"Inconsolata","DejaVu Sans Mono",monospace;
+           font-size:27px; letter-spacing:.02em; color:var(--mono); margin-top:34px; }
+  .foot { position:absolute; left:106px; right:96px; bottom:56px;
+          display:flex; justify-content:space-between; align-items:flex-end;
+          font-size:25px; color:var(--foot); }
+  .foot .sites { color:var(--role); }
+  .years { text-align:right; }
+  .years .n { font-size:56px; font-weight:800; color:var(--title); line-height:1; letter-spacing:-.02em; }
+  .years .l { font-size:21px; letter-spacing:.16em; text-transform:uppercase; color:var(--foot); margin-top:9px; }
+</style>
+<div class="glow"></div>
+<div class="grid"></div>
+<div class="bar"></div>
+<div class="wrap">
+  <div class="eyebrow">Liège · Belgique</div>
+  <h1>Hervé Delvaux</h1>
+  <div class="role">Analyste-programmeur · Fondateur de <b>Webadev</b> &amp; <b>WadEasy</b></div>
+  <div class="rule"></div>
+  <div class="stack">PHP · Mezzio · Doctrine · Nuxt · Vue · Proxmox</div>
+</div>
+<div class="foot">
+  <div class="sites">webadev.com &nbsp;·&nbsp; wad-easy.be</div>
+  <div class="years"><div class="n">25+</div><div class="l">ans de métier</div></div>
+</div>
