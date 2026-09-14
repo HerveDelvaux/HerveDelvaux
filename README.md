@@ -21,9 +21,9 @@ métier web, du modèle de données jusqu'aux serveurs qui les font tourner.
 | --- | --- |
 | **Backend** | PHP 8.3+ · Mezzio / Laminas · Doctrine · MariaDB · API REST |
 | **Frontend** | Nuxt · Vue 3 · Nuxt UI · Tailwind CSS · TypeScript · monorepo pnpm |
-| **Infra** | Debian · Proxmox VE · Docker · nginx · Ansible · SOPS/age · Go |
+| **Infra** | Debian · Proxmox VE · Docker · nginx · Ansible · SOPS/age |
 | **CI/CD** | GitHub Actions · tests automatisés · déploiement continu |
-| **Langages** | PHP · TypeScript · Go · Bash |
+| **Langages** | PHP · TypeScript · Bash |
 
 ## À propos de ce profil
 
